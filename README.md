@@ -52,4 +52,30 @@ Notes:
   <a href="https://www.freecodecamp.org">this links to freecodecamp.org</a>
   ```
 
-  Then your browser will display the text `this links to freecodecamp.org` as a link you can click. And that link will take you to the web address `https://www.freecodecamp.org`.
+  Then your browser will display the text `this links to freecodecamp.org` as a link you can click. And that link will take you to the web address `https://www.freecodecamp.org`..
+
+
+### Link to Internal Sections of a Page with Anchor Elements
+
+`a` (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
+
+Notes: 
+
+* To create an internal link, you assign a link's `href` attribute to a hash symbol `#` plus the value of the `id` attribute for the element that you want to internally link to, usually further down the page.
+* You then need to add the same `id` attribute to the element you are linking to.
+* An `id` **is an attribute that uniquely describes an element.**
+
+  Below is an example of an internal anchor link and its target element:
+
+  ```html
+  <a href="#contacts-header">Contacts</a>
+  ...
+  <h2 id="contacts-header">Contacts</h2>
+  ```
+
+When users click the `Contacts` link, they'll be taken to the section of the webpage with the **Contacts** heading element.
+
+
+### Link in a New Page
+
+`target="_blank"` attribute from the anchor tag since this causes the linked document to open in a new window tab.
