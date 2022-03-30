@@ -16,6 +16,7 @@ These tags give a descriptive structure to your HTML, make your HTML easier to r
 
 The **main** HTML5 tag helps search engines and other developers find the main content of your page
 
+
 ### Add Images to Your Website
 
 You can add images to your website by using the `img` element, and point to a specific image's URL using the `src` attribute
@@ -36,3 +37,19 @@ You can add images to your website by using the `img` element, and point to a sp
 ```html
 <img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">
 ```
+
+### Link to External Pages with Anchor Elements
+
+You can use **`a`** (anchor) elements to link to content outside of your web page. 
+
+Notes:
+
+* `a` elements need a destination web address called an `href` attribute. They also need anchor text.
+
+  Here's an example:
+
+  ```html
+  <a href="https://www.freecodecamp.org">this links to freecodecamp.org</a>
+  ```
+
+  Then your browser will display the text `this links to freecodecamp.org` as a link you can click. And that link will take you to the web address `https://www.freecodecamp.org`.
