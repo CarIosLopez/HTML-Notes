@@ -16,7 +16,6 @@ These tags give a descriptive structure to your HTML, make your HTML easier to r
 
 The **main** HTML5 tag helps search engines and other developers find the main content of your page
 
-
 ### Add Images to Your Website
 
 You can add images to your website by using the `img` element, and point to a specific image's URL using the `src` attribute
@@ -40,7 +39,7 @@ You can add images to your website by using the `img` element, and point to a sp
 
 ### Link to External Pages with Anchor Elements
 
-You can use **`a`** (anchor) elements to link to content outside of your web page. 
+You can use **`a`** (anchor) elements to link to content outside of your web page.
 
 Notes:
 
@@ -54,12 +53,11 @@ Notes:
 
   Then your browser will display the text `this links to freecodecamp.org` as a link you can click. And that link will take you to the web address `https://www.freecodecamp.org`..
 
-
 ### Link to Internal Sections of a Page with Anchor Elements
 
 `a` (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
 
-Notes: 
+Notes:
 
 * To create an internal link, you assign a link's `href` attribute to a hash symbol `#` plus the value of the `id` attribute for the element that you want to internally link to, usually further down the page.
 * You then need to add the same `id` attribute to the element you are linking to.
@@ -75,7 +73,65 @@ Notes:
 
 When users click the `Contacts` link, they'll be taken to the section of the webpage with the **Contacts** heading element.
 
-
 ### Link in a New Page
 
 `target="_blank"` attribute from the anchor tag since this causes the linked document to open in a new window tab.
+
+
+### Nest an Anchor Element within a Paragraph
+
+You can nest links within other text elements.
+
+```html
+<p>
+  Here's a <a target="_blank" href="https://www.freecodecamp.org"> link to www.freecodecamp.org</a> for you to follow.
+</p>
+```
+
+Let's break down the example. Normal text is wrapped in the `p` element:
+
+```html
+<p> Here's a ... for you to follow. </p>
+```
+
+Next is the *anchor* element `<a>` (which requires a closing tag `</a>`):
+
+```html
+<a> ... </a>
+```
+
+`target` is an anchor tag attribute that specifies where to open the link. The value `_blank` specifies to open the link in a new tab. The `href` is an anchor tag attribute that contains the URL address of the link:
+
+```html
+<a href="https://www.freecodecamp.org" target="_blank"> ... </a>
+```
+
+The text, `link to www.freecodecamp.org`, within the `a` element is called anchor text, and will display the link to click:
+
+```html
+<a href=" ... " target="...">link to freecodecamp.org</a>
+```
+
+The final output of the example will look like this:
+
+**Here's a [link to www.freecodecamp.org](https://www.freecodecamp.org/) for you to follow.**
+
+
+### Make Dead Links Using the Hash Symbol
+
+Sometimes you want to add `a` elements to your website before you know where they will link.
+
+This is also handy when you're changing the behavior of a link using `JavaScript`, which we'll learn about later.
+
+
+### Turn an Image into a Link
+
+You can make elements into links by nesting them within an `a` element.
+
+Nest your image within an `a` element. Here's an example:
+
+```html
+<a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Three kittens running towards the camera."></a>
+```
+
+Remember to use `#` as your `a` element's `href` property in order to turn it into a dead link.
