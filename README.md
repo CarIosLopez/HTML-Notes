@@ -165,3 +165,19 @@ For example:
   <li>Sylvester</li>
 </ol>
 ```
+
+
+
+### Create a Text Field
+
+Now let's create a web form.
+
+`input` elements are a convenient way to get input from your user.
+
+You can create a text input like this:
+
+```html
+<input type="text">
+```
+
+Note that `input` elements are self-closing.
