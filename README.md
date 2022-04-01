@@ -77,7 +77,6 @@ When users click the `Contacts` link, they'll be taken to the section of the web
 
 `target="_blank"` attribute from the anchor tag since this causes the linked document to open in a new window tab.
 
-
 ### Nest an Anchor Element within a Paragraph
 
 You can nest links within other text elements.
@@ -116,13 +115,11 @@ The final output of the example will look like this:
 
 **Here's a [link to www.freecodecamp.org](https://www.freecodecamp.org/) for you to follow.**
 
-
 ### Make Dead Links Using the Hash Symbol
 
 Sometimes you want to add `a` elements to your website before you know where they will link.
 
 This is also handy when you're changing the behavior of a link using `JavaScript`, which we'll learn about later.
-
 
 ### Turn an Image into a Link
 
@@ -135,7 +132,6 @@ Nest your image within an `a` element. Here's an example:
 ```
 
 Remember to use `#` as your `a` element's `href` property in order to turn it into a dead link.
-
 
 ### Create a Bulleted Unordered List
 
@@ -153,3 +149,19 @@ For example:
 ```
 
 would create a bullet point style list of `milk` and `cheese`.
+
+
+### Create an Ordered List
+
+HTML has another special element for creating ordered lists, or numbered lists.
+
+Ordered lists start with an opening `<ol>` element, followed by any number of `<li>` elements. Finally, ordered lists are closed with the `</ol>` tag.
+
+For example:
+
+```html
+<ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+</ol>
+```
