@@ -207,3 +207,15 @@ For example:
   <input>
 </form>
 ```
+
+
+
+### Add a Submit Button to a Form
+
+Let's add a `submit` button to your form. Clicking this button will send the data from your form to the URL you specified with your form's `action` attribute.
+
+Here's an example submit button:
+
+```html
+<button type="submit">this button submits the form</button>
+```
