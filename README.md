@@ -150,7 +150,6 @@ For example:
 
 would create a bullet point style list of `milk` and `cheese`.
 
-
 ### Create an Ordered List
 
 HTML has another special element for creating ordered lists, or numbered lists.
@@ -166,8 +165,6 @@ For example:
 </ol>
 ```
 
-
-
 ### Create a Text Field
 
 Now let's create a web form.
@@ -182,7 +179,6 @@ You can create a text input like this:
 
 Note that `input` elements are self-closing.
 
-
 ### Add Placeholder Text to a Text Field
 
 Placeholder text is what is displayed in your `input` element before your user has inputted anything.
@@ -194,7 +190,6 @@ You can create placeholder text like so:
 ```
 
 **Note:** Remember that `input` elements are self-closing.
-
 
 ### Create a Form Element
 
@@ -208,8 +203,6 @@ For example:
 </form>
 ```
 
-
-
 ### Add a Submit Button to a Form
 
 Let's add a `submit` button to your form. Clicking this button will send the data from your form to the URL you specified with your form's `action` attribute.
@@ -219,3 +212,18 @@ Here's an example submit button:
 ```html
 <button type="submit">this button submits the form</button>
 ```
+
+# Use HTML5 to Require a Field
+
+You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.
+
+For example, if you wanted to make a text input field required, you can just add the attribute `required` within your `input` element, like this:
+
+`<input type="text" required>`
+
+
+# Make your text `input` a `required` field, so that your user can't submit the form without completing this field.Use HTML5 to Require a Field
+
+You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.
+
+For example, if you wanted to make a text input field required, you can just add the attribute `required` within your `input` element, like this: `<input type="text" required`
